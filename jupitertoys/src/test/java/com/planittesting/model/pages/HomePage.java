@@ -11,5 +11,4 @@ public class HomePage extends BasePage<HomePage> {
        // this.driver = driver; 
     }
 
-   
 }

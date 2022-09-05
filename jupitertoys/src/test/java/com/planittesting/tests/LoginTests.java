@@ -18,33 +18,4 @@ public class LoginTests extends BaseTest{
         
         assertEquals("someone", homePage.getCurrentUser());
     }
-
-    @Test
-    public void FillInContactPage() {
-        var contactPage = open(HomePage.class)
-            .clickContactMenu()
-            .clickLoginMenu()
-            .setUsername("someone")
-            .setPassword("letmein")
-            .clickAgreeCheckbox()
-            .clickLoginButton()
-            .setForename("someone");
-
-        assertEquals("someone", contactPage.getCurrentUser());
-    }
-
-    @Test
-    public void verifyUserLogOut() {
-        var contactPage = open(HomePage.class)
-            .clickContactMenu()
-            .clickLoginMenu()
-            .setUsername("someone")
-            .setPassword("letmein")
-            .clickAgreeCheckbox()
-            .clickLoginButton()
-            .clickLogoutMenu()
-            .clickLogoutButton();
-        
-        assertEquals("someone", contactPage.getCurrentUser());
-    }
 }

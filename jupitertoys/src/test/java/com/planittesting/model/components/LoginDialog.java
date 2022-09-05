@@ -13,7 +13,7 @@ public class LoginDialog <CurrentPage> {
     }
 
     public LoginDialog<CurrentPage> setUsername(String username){
-        rootElement.findElement(By.id("loginUserName")).sendKeys(username);
+        rootElement.findElement(By.id("loginUsername")).sendKeys(username);
         return this;
     }    
 
