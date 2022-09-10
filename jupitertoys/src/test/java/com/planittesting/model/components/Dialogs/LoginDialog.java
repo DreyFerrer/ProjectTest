@@ -1,4 +1,4 @@
-package com.planittesting.model.components;
+package com.planittesting.model.components.Dialogs;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
