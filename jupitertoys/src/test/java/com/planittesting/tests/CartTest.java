@@ -12,9 +12,9 @@ public class CartTest extends BaseTest {
         void checkCartPrice() {
             var product = ((HomePage) open(HomePage.class))
                 .clickShopMenu()
-                .validateProduct(getTitle().equals("TeddyBear"));
-                .((Object) clickCartMenu())
-                .getPrice("Teddy Bear");
+                .validateProduct(getTitle().equals("Bear"));
+            
+				
             Object price;
 			Object cartPrice;
 			assertEquals(price, cartPrice);

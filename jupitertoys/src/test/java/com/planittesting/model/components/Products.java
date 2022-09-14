@@ -10,14 +10,14 @@ public class Products {
             this.rootElement = rootElement;
         }
     
-        public WebElement getTitle() {
-            return rootElement.findElement(By.className("product-title ng-binding"));
+        public String getTitle() {
+            return rootElement.findElement(By.className("product-title")).getText();
         }
     
         public Double getPrice() {
             return Double.parseDouble(
-                rootElement.findElement( By.className("product-price ng-binding"))
-                .getText());    
+                rootElement.findElement( By.className("product-price"))
+                .getText().replace("$",""));    
         }
     
 }

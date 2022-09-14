@@ -7,8 +7,8 @@ public class HomePage extends BasePage<HomePage> {
     WebDriver driver;
 
     public static final By LBL_HEADER = By.className("hero-unit");
-    public static final By BTN_SHOP = By.className("btn btn-success btn-large");
-    public static final By LBL_SHOP = By.xpath("//*[@id='nav-shop']/a");
+    public static final By BTN_HOME = By.className("btn");
+    public static final By LBL_SHOP = By.xpath("//*[@id='nav-shop']");
 
     public HomePage(WebDriver driver){
         super(driver);
@@ -18,17 +18,16 @@ public class HomePage extends BasePage<HomePage> {
         waitElementToBeVisible(LBL_HEADER);
     }
 
-    public void StartShopping(){
-         waitElementToBeVisible(BTN_SHOP);
-         click(BTN_SHOP);
-    }
-    public void clickShopMenu(){
-        driver.findElement(By.className("nav-shop"));
-        waitElementToBeVisible(LBL_SHOP);
-        waitElementToBeClick(LBL_SHOP);
+
+
+    // public void clickShopMenu(){
+    //     driver.findElement(By.className("nav-shop"));
+    //     waitElementToBeVisible(LBL_SHOP);
+    //     click(LBL_SHOP);
+    //     return new ShopPage(driver);
+
     }
     
 
 	
 
-}
